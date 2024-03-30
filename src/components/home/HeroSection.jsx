@@ -14,11 +14,12 @@ const HeroSection = () => {
   };
 
   const imageAnim = {
-    hidden: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" },
+    hidden: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", y: 50 },
     show: (delay) => ({
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+      y: 0,
       transition: {
-        duration: 1,
+        duration: 0.8,
         delay: delay,
         ease: [0.37, 0, 0.63, 1],
       },
