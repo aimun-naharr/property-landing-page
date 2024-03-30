@@ -106,7 +106,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={2}
-        className="absolute top-[10%] right-[5%] 3xl:w-[350px] 2xl:h-[250px]  overflow-hidden rounded"
+        className="absolute top-[10%] right-[5%] 3xl:h-[450px] 2xl:h-[250px]  overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image2}

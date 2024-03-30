@@ -16,16 +16,22 @@ const AboutSection = () => {
         </div>
         <div className="col-span-6 flex flex-col">
           <div className="h-40"></div>
-          <div className="flex gap-8 items-center text-balance">
+          <div className="flex gap-8 items-center text-balance text-gray-600">
             <p>
-              <span className="text-6xl font-bold">Q</span>orem ipsum dolor sit
-              amet consectetur adipisicing elit. Amet dignissimos libero, eum
-              aliquam dolorem sequi magni deleniti quae officiis odio?
+              <span className="text-6xl font-bold text-gray-800">Q</span>orem
+              ipsum dolor sit amet consectetur adipisicing elit. Amet
+              dignissimos libero, eum aliquam dolorem sequi magni deleniti quae
+              officiis odio? <br />
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+              quibusdam!
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
               dignissimos libero, eum aliquam dolorem sequi magni deleniti quae
-              officiis odio?
+              officiis odio? <br />
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque, dolore voluptates? Hic, minima tenetur aspernatur
+              beatae et earum numquam magni!
             </p>
           </div>
         </div>
