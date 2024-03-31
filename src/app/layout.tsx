@@ -5,7 +5,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const myFont = localFont({
-  src: "../../public/fonts/tinvwl-webfont.woff2",
+  src: "../../public/fonts/advanced-popups-icons.woff",
 });
 
 export const metadata: Metadata = {
