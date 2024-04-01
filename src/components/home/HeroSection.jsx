@@ -38,7 +38,7 @@ const HeroSection = () => {
           variants={heroTitleAnim}
           initial="hidden"
           animate="show"
-          className="text-5xl md:text-8xl "
+          className="text-6xl md:text-8xl text-center "
           custom={0}
         >
           Modern{" "}
@@ -47,7 +47,7 @@ const HeroSection = () => {
           variants={heroTitleAnim}
           initial="hidden"
           animate="show"
-          className="text-5xl md:text-8xl "
+          className="text-6xl md:text-8xl text-center"
           custom={0.5}
         >
           Style & Design
@@ -89,7 +89,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={1.4}
-        className="absolute top-[10%] 2xl:left-[13%] 3xl:w-[400px] md:w-[350px] w-[150px]  overflow-hidden rounded"
+        className="absolute top-[10%] 2xl:left-[13%] 3xl:w-[400px] md:w-[350px] w-[200px]  overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image3}
@@ -118,7 +118,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={1.8}
-        className="absolute bottom-[15%] right-[6%] md:w-[150px] w-[100px]   overflow-hidden rounded z-[1]"
+        className="absolute bottom-[15%] right-[6%] md:w-[150px] w-[100px] overflow-hidden rounded z-[1]"
       >
         <Image
           src={heroSectionImages.image1}
