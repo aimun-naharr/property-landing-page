@@ -14,12 +14,17 @@ const HeroSection = () => {
   };
 
   const imageAnim = {
-    hidden: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", y: 50 },
+    hidden: {
+      clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+      y: 50,
+      rotate: 1,
+    },
     show: (delay) => ({
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       y: 0,
+      rotate: 0,
       transition: {
-        duration: 0.8,
+        duration: 1,
         delay: delay,
         ease: [0.37, 0, 0.63, 1],
       },
@@ -33,7 +38,7 @@ const HeroSection = () => {
           variants={heroTitleAnim}
           initial="hidden"
           animate="show"
-          className="text-8xl "
+          className="text-5xl md:text-8xl "
           custom={0}
         >
           Modern{" "}
@@ -42,7 +47,7 @@ const HeroSection = () => {
           variants={heroTitleAnim}
           initial="hidden"
           animate="show"
-          className="text-8xl "
+          className="text-5xl md:text-8xl "
           custom={0.5}
         >
           Style & Design
@@ -58,11 +63,33 @@ const HeroSection = () => {
         </motion.p>
       </div>
       <motion.div
+        className="absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce-slow"
+        variants={heroTitleAnim}
+        initial="hidden"
+        animate="show"
+        custom={2.4}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="size-20"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+          />
+        </svg>
+      </motion.div>
+      <motion.div
         variants={imageAnim}
         initial="hidden"
         animate="show"
         custom={1.4}
-        className="absolute top-[10%] 2xl:left-[13%] 3xl:w-[400px] 2xl:w-[350px]   overflow-hidden rounded"
+        className="absolute top-[10%] 2xl:left-[13%] 3xl:w-[400px] md:w-[350px] w-[150px]  overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image3}
@@ -77,7 +104,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={1.6}
-        className="absolute bottom-[5%] right-[12%] w-[350px]     overflow-hidden rounded"
+        className="absolute bottom-[5%] right-[2%] md:right-[12%] md:w-[350px] w-[200px]  overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image5}
@@ -91,7 +118,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={1.8}
-        className="absolute bottom-[15%] right-[6%] w-[150px]  overflow-hidden rounded z-[1]"
+        className="absolute bottom-[15%] right-[6%] md:w-[150px] w-[100px]   overflow-hidden rounded z-[1]"
       >
         <Image
           src={heroSectionImages.image1}
@@ -106,7 +133,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={2}
-        className="absolute top-[10%] right-[5%] 3xl:h-[450px] 2xl:h-[250px]  overflow-hidden rounded"
+        className="absolute top-[10%] right-[5%] w-[100px] md:w-[420px] 2xl:w-auto 3xl:h-[450px] 2xl:h-[300px] md:h-[250px] overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image2}
@@ -120,7 +147,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={2.2}
-        className="absolute top-[30%] left-[10%] w-[180px] overflow-hidden rounded"
+        className="absolute md:top-[30%] top-[20%] 2xl:left-[10%] left-[2%] w-[100px] overflow-hidden rounded"
       >
         <Image
           src={heroSectionImages.image6}
@@ -134,7 +161,7 @@ const HeroSection = () => {
         initial="hidden"
         animate="show"
         custom={2.4}
-        className="absolute bottom-0 left-[5%] 3xl:w-[500px] 2xl:w-[380px] overflow-hidden rounded  "
+        className="absolute bottom-0 left-[1%] w-[150px]  xl:left-[5%] 3xl:w-[500px] 2xl:w-[500px] md:w-[430px] overflow-hidden rounded  "
       >
         <Image
           src={heroSectionImages.image4}

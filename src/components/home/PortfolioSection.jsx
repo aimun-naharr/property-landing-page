@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default function PortfolioSection() {
   return (
-    <section className="grid grid-cols-4 grid-rows-2 container-box gap-6">
-      <div className="col-span-2 row-span-2 relative">
+    <section className="grid md:grid-cols-4 md:grid-rows-2 sm:grid-cols-2 grid-cols-1 container-box gap-6">
+      <div className="md:col-span-2 row-span-2 relative">
         <FollowerPointerCard title={<div className="bg-red-500">house</div>}>
           <Image
             src={portfolioImages.portfolio1}
@@ -18,7 +18,7 @@ export default function PortfolioSection() {
           />
         </FollowerPointerCard>
       </div>
-      <div className="col-span-1 row-span-2   relative">
+      <div className="md:col-span-1 row-span-2   relative">
         {" "}
         <Image
           src={portfolioImages.portfolio2}
@@ -27,7 +27,7 @@ export default function PortfolioSection() {
           className="object-cover h-full"
         />
       </div>
-      <div className="col-span-1 row-span-1   flex flex-col">
+      <div className="md:col-span-1 row-span-1   flex flex-col">
         {" "}
         <Image
           src={portfolioImages.portfolio3}
@@ -36,7 +36,7 @@ export default function PortfolioSection() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="col-span-1 row-span-1   flex flex-col">
+      <div className="md:col-span-1 row-span-1   flex flex-col">
         {" "}
         <Image
           src={portfolioImages.portfolio4}
@@ -45,7 +45,7 @@ export default function PortfolioSection() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="col-span-2 row-span-1   ">
+      <div className="md:col-span-2 row-span-1   ">
         {" "}
         <Image
           src={portfolioImages.portfolio5}
@@ -54,7 +54,7 @@ export default function PortfolioSection() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="col-span-2 row-span-2 ">
+      <div className="md:col-span-2 row-span-2 ">
         <Image
           src={portfolioImages.portfolio6}
           alt="house"
@@ -62,7 +62,7 @@ export default function PortfolioSection() {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="col-span-2 row-span-1   ">
+      <div className="md:col-span-2 row-span-1   ">
         {" "}
         <Image
           src={portfolioImages.portfolio7}

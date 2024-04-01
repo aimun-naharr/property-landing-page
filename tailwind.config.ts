@@ -27,14 +27,19 @@ const config: Config = {
       // => @media (min-width: 1600px) { ... }
     },
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "bounce-slow": "bounce 2s linear infinite",
       },
       keyframes: {
         scroll: {

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: "500",
+});
 const myFont = localFont({
   src: "../../public/fonts/advanced-popups-icons.woff",
 });
@@ -20,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={myFont.className}>{children}</body>
+      <body className={`${myFont.className} ${poppins.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
