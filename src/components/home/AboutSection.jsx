@@ -14,7 +14,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="show"
           custom={0.2}
-          className="text-6xl font-bold "
+          className="section-title"
           style={{ wordSpacing: "-12px" }}
         >
           Creative approach to architecture
@@ -40,7 +40,7 @@ const AboutSection = () => {
             whileInView="show"
             custom={0.6}
           >
-            <span className="text-6xl font-bold text-gray-800 font-poppins">
+            <span className="md:text-6xl text-4xl font-bold text-gray-800 font-poppins">
               Q
             </span>
             Creative approach to architecture eum aliquam dolorem sequi magni

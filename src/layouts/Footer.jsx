@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="bg-gray-900 py-40 text-white">
       <div className="container-box grid md:grid-cols-4 gap-8 md:gap-0 grid-cols-1">
         <div className="md:col-span-2">
-          <h1 className="text-5xl font-bold" style={{ wordSpacing: "-10px" }}>
+          <h1 className="section-title" style={{ wordSpacing: "-10px" }}>
             Creating contemporary <br /> home designs
           </h1>
         </div>

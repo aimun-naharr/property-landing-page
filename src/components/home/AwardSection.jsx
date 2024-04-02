@@ -18,7 +18,7 @@ export default function AwardSection() {
               whileInView="show"
               custom={0.3}
               viewport={{ once: true }}
-              className="text-5xl font-bold"
+              className="section-title"
             >
               My Awards
             </motion.h1>

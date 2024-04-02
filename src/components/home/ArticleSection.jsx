@@ -41,7 +41,7 @@ export default function ArticleSection() {
     <section className="container-box my-32">
       <div className="flex flex-col items-center justify-center mb-10">
         <Eyebrow title="Current News" />
-        <h1 className="text-5xl font-bold text-slate-800">Latest Articles</h1>
+        <h1 className="section-title">Latest Articles</h1>
       </div>
       <div className="flex gap-8 flex-wrap md:flex-nowrap">
         <ArticleCard

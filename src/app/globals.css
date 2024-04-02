@@ -34,4 +34,7 @@
   .container-box {
     @apply max-w-7xl mx-auto px-10 2xl:px-0;
   }
+  .section-title {
+    @apply md:text-6xl font-bold text-4xl;
+  }
 }
